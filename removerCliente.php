@@ -3,25 +3,29 @@
     include_once("verificarSessaoAdmin.php");
 
     include_once("connectionClient.php"); 
+
     if(isset($_POST['txtUsername'])) { 
 
         $username = $_POST['txtUsername'];
 
-        $query = "DELETE FROM tbl_notas WHERE username = '$username' "; 
+        $query = "DELETE FROM tbl_client WHERE username = '$username' "; 
         
         mysqli_query($conn, $query);
+
+        $conn->close(); 
+
     }
 
 ?>
 
 <html>
-<head><title>Remover Cadastro|EasyDonate</title></head>
+<head><title>Remover Usuario|EasyDonate</title></head>
     <body>
     <center>
-        <h1>Remover Cadastro</h1>
+        <h1>Remover Usuario</h1>
         <form action="<?PHP $_PHP_SELF ?>" method="post">
             Username <input type="text" name="txtUsername" value="" /><br/>
-            <input type="submit" name="btnSubmit" value="Cadastrar"/>
+            <input type="submit" name="btnSubmit" value="Remover"/>
         </form>
         <a href="admin.php">Voltar</a></h1>
     </center>
