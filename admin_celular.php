@@ -1,6 +1,6 @@
 <?php
 
-    include_once("verificarSessaoAdmin.php");
+    include_once("sis_verificarSessaoAdmin.php");
 
 ?>
 
@@ -9,7 +9,7 @@
     <body>
     <center>
         <h1>Celular</h1>
-        <form action="receberInserirNotasBD.php" method="post">
+        <form action="sis_receberInserirNotasBD.php" method="post">
 
             CNPJ <input type="text" name="txtCNPJ" value="" /><br/>
             VALOR <input type="text" name="txtValor" value="" /><br/>

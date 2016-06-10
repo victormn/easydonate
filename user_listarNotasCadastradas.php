@@ -1,8 +1,8 @@
 <?php
 
-	include_once("verificarSessao.php");
+	include_once("sis_verificarSessao.php");
 		
-	include_once("buscarNotasCadastradasBD.php");
+	include_once("sis_buscarNotasCadastradasBD.php");
 ?>
 
 <html>
@@ -26,7 +26,7 @@
 	    	echo "<b>Nenhuma nota cadastrada :)</b><br><br>";
 		}
 
-			echo '<form action="listarNotasCadastradas.php">
+		echo '<form action="user_listarNotasCadastradas.php">
 		    <input type="submit" value="Atualizar Lista">
 			</form>';
 

@@ -1,8 +1,16 @@
 <?PHP 
 
     session_start();
+    if(isset($_SESSION['admin'])) {
+        header("Location: admin.php");
+        exit;
+    }    
+    if(isset($_SESSION['login'])) {
+        header("Location: user_listarNotas.php");
+        exit;
+    }
 
-    include_once("conectarUserBD.php"); 
+    include_once("sis_conectarUserBD.php"); 
     if( isset($_POST['txtUsername']) && isset($_POST['txtPassword']) ) { 
 
         $username = $_POST['txtUsername'];
@@ -25,7 +33,7 @@
             if($result->num_rows > 0){   
 
                 $_SESSION['login'] = true;
-                header("Location: listarNotas.php");
+                header("Location: user_listarNotas.php");
                 exit; 
             } 
             else{

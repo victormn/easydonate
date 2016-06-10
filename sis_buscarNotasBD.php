@@ -1,8 +1,8 @@
 <?php
 	
-	include_once("verificarSessao.php");
+	include_once("sis_verificarSessao.php");
 
-	include_once("conectarNotasBD.php");
+	include_once("sis_conectarNotasBD.php");
 
 	$query = "SELECT * FROM tbl_notas "; 
         

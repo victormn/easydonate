@@ -1,8 +1,8 @@
 <?php
 
-	include_once("verificarSessao.php");
+	include_once("sis_verificarSessao.php");
 
-	include_once("buscarNotasBD.php");
+	include_once("sis_buscarNotasBD.php");
 ?>
 
 <html>
@@ -21,18 +21,18 @@
 		        "<br><b>Valor da Nota: </b>" . $row["valor"].
 		        "<br><b>Data da Nota (Compra): </b>" . $row["data"]."<br><br>";
 		    }
-		    echo '<form action="enviarNotasParaReceita.php">
+		    echo '<form action="sis_enviarNotasParaReceita.php">
 		    <input type="submit" value="Enviar">
 			</form>';
 
-			echo '<form action="listarNotas.php">
+			echo '<form action="user_listarNotas.php">
 		    <input type="submit" value="Atualizar Lista">
 			</form>';
 
 		} else {
 	    	echo "<b>Nenhuma nota :)</b><br><br>";
 
-		    echo '<form action="listarNotas.php">
+		    echo '<form action="user_listarNotas.php">
 		    <input type="submit" value="Atualizar Lista">
 			</form>';
 		}

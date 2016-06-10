@@ -1,8 +1,8 @@
 <?php
 
-    include_once("verificarSessaoAdmin.php");
+    include_once("sis_verificarSessaoAdmin.php");
 
-    include_once("conectarUserBD.php"); 
+    include_once("sis_conectarUserBD.php"); 
 
 	$query = "SELECT * FROM tbl_client "; 
         
