@@ -2,7 +2,7 @@
 
 	include_once("verificarSessao.php");
 
-    include_once("conectarBD.php");
+    include_once("conectarNotasBD.php");
 
     $query = "DELETE FROM tbl_notas"; 
         

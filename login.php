@@ -2,7 +2,7 @@
 
     session_start();
 
-    include_once("connectionClient.php"); 
+    include_once("conectarUserBD.php"); 
     if( isset($_POST['txtUsername']) && isset($_POST['txtPassword']) ) { 
 
         $username = $_POST['txtUsername'];

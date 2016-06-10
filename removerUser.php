@@ -2,7 +2,7 @@
 
     include_once("verificarSessaoAdmin.php");
 
-    include_once("connectionClient.php"); 
+    include_once("conectarUserBD.php"); 
 
     if(isset($_POST['txtUsername'])) { 
 

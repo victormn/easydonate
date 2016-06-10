@@ -6,7 +6,7 @@
 ?>
 
 <html>
-<head><title>Notas Recebidas|	EasyDonate</title></head>
+<head><title>Notas Recebidas|EasyDonate</title></head>
     <body>
     <center>
     	<h1>Notas Recebidas</h1>

@@ -13,7 +13,6 @@
 
             CNPJ <input type="text" name="txtCNPJ" value="" /><br/>
             VALOR <input type="text" name="txtValor" value="" /><br/>
-            COO <input type="text" name="txtCoo" value="" /><br/>
             Data <input type="text" name="txtData" value="" /><br/>
             QRCode <input type="text" name="txtQRCode" value="" /><br/>
 

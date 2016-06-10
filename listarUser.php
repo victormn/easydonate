@@ -2,7 +2,7 @@
 
     include_once("verificarSessaoAdmin.php");
 
-    include_once("connectionClient.php"); 
+    include_once("conectarUserBD.php"); 
 
 	$query = "SELECT * FROM tbl_client "; 
         
@@ -31,7 +31,7 @@
 	    	echo "<b>Nenhum usuario cadastrado :)</b><br><br>";
 		}
 
-		echo '<form action="listarUsers.php">
+		echo '<form action="listarUser.php">
 	    <input type="submit" value="Atualizar">
 		</form>';
 

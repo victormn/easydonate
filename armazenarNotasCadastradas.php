@@ -2,7 +2,7 @@
 
     include_once("verificarSessao.php");
 
-	include_once("conectarBD.php");
+	include_once("conectarNotasBD.php");
 
 	$query = "SELECT * FROM tbl_notas "; 
         
@@ -10,14 +10,14 @@
 
 	while($row = $result->fetch_assoc()) {
 
+        $id = $row['id']; 
         $cnpj = $row['cnpj']; 
         $valor = $row['valor'];
-        $coo = $row['coo'];
         $data = $row['data'];
         $qrcode = $row['qrcode'];
 
-        $query = "INSERT INTO tbl_notascadastradas(cnpj, valor, coo, data, qrcode)". 
-        "VALUES('$cnpj', '$valor', '$coo', '$data', '$qrcode')"; 
+        $query = "INSERT INTO tbl_notascadastradas(id, cnpj, valor, data, qrcode)". 
+        "VALUES('$id', '$cnpj', '$valor', '$data', '$qrcode')"; 
         
 		mysqli_query($conn, $query);
     }

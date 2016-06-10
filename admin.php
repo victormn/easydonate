@@ -1,6 +1,6 @@
 <?php
 
-	include_once("verificarSessao.php");
+	include_once("verificarSessaoAdmin.php");
 
 ?>
 
@@ -16,9 +16,11 @@
 		<?php echo "<br>"; ?>
 		<a href="removerNotasCadastradas.php">Apagar BD Notas Cadastradas</a></h1>
 		<?php echo "<br>"; ?>
-		<a href="cadastro.php">Cadastro de Cliente</a></h1>
+		<a href="cadastroUser.php">Cadastro de Usuario</a></h1>
 		<?php echo "<br>"; ?>
-		<a href="removerCliente.php">Remover Cliente</a></h1>
+		<a href="listarUser.php">Listar Usuarios</a></h1>
+		<?php echo "<br>"; ?>
+		<a href="removerUser.php">Remover Usuario</a></h1>
 		<?php echo "<br>"; ?>
 		<a href="sair.php">Sair</a></h1>			
 

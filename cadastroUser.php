@@ -2,7 +2,7 @@
 
     include_once("verificarSessaoAdmin.php");
 
-    include_once("connectionClient.php"); 
+    include_once("conectarUserBD.php"); 
     if( isset($_POST['txtUsername']) && isset($_POST['txtPassword']) ) { 
 
         $username = $_POST['txtUsername'];
@@ -15,11 +15,11 @@
         
         if($result == 1){ 
         
-        	echo "Casdastrado";
+        	echo "Casdastrado com sucesso!";
 
         }
         else{
-        	echo "Username ja cadastrados";
+        	echo "Username ja cadastrado!";
         }
 
     }
