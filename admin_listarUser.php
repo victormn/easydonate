@@ -31,7 +31,7 @@
 	    	echo "<b>Nenhum usuario cadastrado :)</b><br><br>";
 		}
 
-		echo '<form action="listarUser.php">
+		echo '<form action="admin_listarUser.php">
 	    <input type="submit" value="Atualizar">
 		</form>';
 
