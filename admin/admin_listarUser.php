@@ -1,8 +1,8 @@
 <?php
 
-    include_once("sis_verificarSessaoAdmin.php");
+    include_once("../system/sys_verificarSessaoAdmin.php");
 
-    include_once("sis_conectarUserBD.php"); 
+    include_once("../system/sys_conectarUserBD.php"); 
 
 	$query = "SELECT * FROM tbl_client "; 
         
@@ -37,7 +37,7 @@
 
         ?>
 
-        <a href="admin.php">Voltar</a></h1>
+        <a href="admin_homepage.php">Voltar</a></h1>
         
 	</center>
     </body>

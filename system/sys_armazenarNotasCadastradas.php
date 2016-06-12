@@ -1,8 +1,8 @@
 <?php
 
-    include_once("sis_verificarSessao.php");
+    include_once("sys_verificarSessao.php");
 
-	include_once("sis_conectarNotasBD.php");
+	include_once("sys_conectarNotasBD.php");
 
 	$query = "SELECT * FROM tbl_notas "; 
         
@@ -24,5 +24,5 @@
 
     $conn->close(); 
 
-	header("Location: sis_removerNotas.php");
+	header("Location: sys_removerNotas.php");
 ?>

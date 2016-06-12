@@ -1,8 +1,8 @@
 <?php
 
-	include_once("sis_verificarSessao.php");
+	include_once("sys_verificarSessao.php");
 
-	include_once("sis_conectarNotasBD.php");
+	include_once("sys_conectarNotasBD.php");
 
 	$cnpj = $_POST['txtCNPJ'];
 	$valor = $_POST['txtValor'];
@@ -17,7 +17,7 @@
 
     //session_start();
     if(isset($_SESSION['admin'])) {
-		header("Location: admin_celular.php");
+		header("Location: ../admin/admin_celular.php");
 	}
 
 ?>

@@ -1,15 +1,15 @@
 <?php
 
-	include_once("sis_verificarSessao.php");
+	include_once("../system/sys_verificarSessao.php");
 		
-	include_once("sis_buscarNotasCadastradasBD.php");
+	include_once("../system/sys_buscarNotasCadastradasBD.php");
 ?>
 
 <html>
-<head><title>Notas Cadastradas|EasyDonate</title></head>
+<head><title>Historico de Notas Enviadas|EasyDonate</title></head>
     <body>
     <center>
-    	<h1>Notas Cadastradas</h1>
+    	<h1>Historico de Notas Enviadas</h1>
 
         <?php 
 
@@ -22,17 +22,21 @@
 		        "<br><b>Data da Nota (Compra): </b>" . $row["data"]."<br><br>";
 		    }
 
+		    echo '<form action="../system/sys_removerNotasCadastradas.php">
+		    <input type="submit" value="Apagar Historico">
+			</form>';
+
 		} else {
 	    	echo "<b>Nenhuma nota cadastrada :)</b><br><br>";
 		}
 
 		echo '<form action="user_listarNotasCadastradas.php">
-		    <input type="submit" value="Atualizar Lista">
-			</form>';
+	    <input type="submit" value="Atualizar Lista">
+		</form>';
 
         ?>
 
-        <a href="sair.php">Sair</a></h1>
+        <a href="../system/sys_sair.php">Sair</a></h1>
         
 	</center>
     </body>
