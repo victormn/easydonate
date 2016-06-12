@@ -6,7 +6,7 @@
         exit;
     }    
     if(isset($_SESSION['login'])) {
-        header("Location: listarNotas.php");
+        header("Location: user_listarNotas.php");
         exit;
     }
 
