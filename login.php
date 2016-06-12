@@ -6,7 +6,7 @@
         exit;
     }    
     if(isset($_SESSION['login'])) {
-        header("Location: user_listarNotas.php");
+        header("Location: listarNotas.php");
         exit;
     }
 
@@ -49,8 +49,8 @@
     <center>
         <h1>Login</h1>
         <form action="<?PHP $_PHP_SELF ?>" method="post">
-            Username <input type="text" name="txtUsername" value="admin" /><br/>
-            Password <input type="password" name="txtPassword" value="engcomp&012013" /><br/>
+            Username <input type="text" name="txtUsername" value="" /><br/>
+            Password <input type="password" name="txtPassword" value="" /><br/>
             <input type="submit" name="btnSubmit" value="Login"/>
         </form>
     </center>
