@@ -1,6 +1,6 @@
 <?php
 
-    include_once("../system/sys_verificarSessaoAdmin.php");
+    include_once("../system/verificarSessaoAdmin.php");
 
 ?>
 
@@ -9,7 +9,7 @@
     <body>
     <center>
         <h1>Celular</h1>
-        <form action="../system/sys_receberInserirNotasBD.php" method="post">
+        <form action="../database/armazenarNotas.php" method="post">
 
             CNPJ <input type="text" name="txtCNPJ" value="" /><br/>
             VALOR <input type="text" name="txtValor" value="" /><br/>
@@ -18,7 +18,7 @@
 
             <input type="submit" name="btnSubmit" value="Enviar"/>
         </form>
-        <a href="admin_homepage.php">Voltar</a></h1>
+        <a href="homepage.php">Voltar</a></h1>
     </center>
     </body>
 </html>

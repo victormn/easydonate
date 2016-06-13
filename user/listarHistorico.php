@@ -1,8 +1,8 @@
 <?php
 
-	include_once("../system/sys_verificarSessao.php");
+	include_once("../system/verificarSessaoCliente.php");
 		
-	include_once("../system/sys_buscarNotasCadastradasBD.php");
+	include_once("../database/buscarHistorico.php");
 ?>
 
 <html>
@@ -22,7 +22,7 @@
 		        "<br><b>Data da Nota (Compra): </b>" . $row["data"]."<br><br>";
 		    }
 
-		    echo '<form action="../system/sys_removerNotasCadastradas.php">
+		    echo '<form action="../database/removerHistorico.php">
 		    <input type="submit" value="Apagar Historico">
 			</form>';
 
@@ -30,13 +30,13 @@
 	    	echo "<b>Nenhuma nota cadastrada :)</b><br><br>";
 		}
 
-		echo '<form action="user_listarNotasCadastradas.php">
+		echo '<form action="listarHistorico.php">
 	    <input type="submit" value="Atualizar Lista">
 		</form>';
 
         ?>
 
-        <a href="../system/sys_sair.php">Sair</a></h1>
+        <a href="../logout.php">Sair</a></h1>
         
 	</center>
     </body>

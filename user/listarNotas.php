@@ -1,8 +1,8 @@
 <?php
 
-	include_once("../system/sys_verificarSessao.php");
+	include_once("../system/verificarSessaoCliente.php");
 
-	include_once("../system/sys_buscarNotasBD.php");
+	include_once("../database/buscarNotas.php");
 ?>
 
 <html>
@@ -21,7 +21,7 @@
 		        "<br><b>Valor da Nota: </b>" . $row["valor"].
 		        "<br><b>Data da Nota (Compra): </b>" . $row["data"]."<br><br>";
 		    }
-		    echo '<form action="../system/sys_enviarNotasParaReceita.php">
+		    echo '<form action="../system/enviarNotasParaReceita.php">
 		    <input type="submit" value="Enviar">
 			</form>';
 
@@ -29,13 +29,13 @@
 	    	echo "<b>Nenhuma nota :)</b><br><br>";
 		}
 
-		echo '<form action="user_listarNotas.php">
+		echo '<form action="listarNotas.php">
 		<input type="submit" value="Atualizar Lista">
 		</form>';
 
         ?>
         
-		<a href="../system/sys_sair.php">Sair</a></h1>
+		<a href="../logout.php">Sair</a></h1>
 
 	</center>
     </body>

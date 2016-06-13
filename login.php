@@ -2,15 +2,15 @@
 
     session_start();
     if(isset($_SESSION['admin'])) {
-        header("Location: admin/admin_homepage.php");
+        header("Location: admin/homepage.php");
         exit;
     }    
-    if(isset($_SESSION['login'])) {
-        header("Location: user/user_listarNotas.php");
+    if(isset($_SESSION['cliente'])) {
+        header("Location: user/listarNotas.php");
         exit;
     }
 
-    include_once("system/sys_conectarUserBD.php"); 
+    include_once("database/conectarUserBD.php"); 
     if( isset($_POST['txtUsername']) && isset($_POST['txtPassword']) ) { 
 
         $username = $_POST['txtUsername'];
@@ -24,16 +24,16 @@
         if(($username == "admin") && ($password == "engcomp&012013")){
 
             $_SESSION['admin'] = true;
-            $_SESSION['login'] = true;
-            header("Location: admin/admin_homepage.php");
+            $_SESSION['cliente'] = true;
+            header("Location: admin/homepage.php");
             exit; 
 
         }else{
 
             if($result->num_rows > 0){   
 
-                $_SESSION['login'] = true;
-                header("Location: user/user_listarNotas.php");
+                $_SESSION['cliente'] = true;
+                header("Location: user/listarNotas.php");
                 exit; 
             } 
             else{

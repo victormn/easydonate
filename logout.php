@@ -2,8 +2,8 @@
 
 	session_start();
 	unset($_SESSION["admin"]);
-	unset($_SESSION["login"]);
-	header("Location: ../login.php");
+	unset($_SESSION["cliente"]);
+	header("Location: login.php");
 	exit;
 
 ?>
