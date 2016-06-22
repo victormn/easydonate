@@ -27,7 +27,7 @@ Após essa data, o projeto pode ser rodado localmente (apenas para testes), expl
 
 ## Aplicativo Android
 
-O aplicativo android que interage com essa aplicação web pode ser encontrado no repositório [Aplicativo Android](http://easydonate.sa-east-1.elasticbeanstalk.com/)
+O aplicativo android que interage com essa aplicação web pode ser encontrado no repositório [Aplicativo Android](https://github.com/garotow/doar-notafiscal)
 
 
 ## Observação final
