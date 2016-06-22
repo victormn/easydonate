@@ -12,12 +12,12 @@ Este material apresenta a criação do site.
 
 ## Executando o projeto
 
-O site presente neste projeto está hospedado no endereço [http://easydonate.sa-east-1.elasticbeanstalk.com/](EasyDonate) e estará disponível até a data 10/06/2017.
+O site presente neste projeto está hospedado no endereço [EasyDonate](http://easydonate.sa-east-1.elasticbeanstalk.com/) e estará disponível até a data 10/06/2017.
 
 Após essa data, o projeto pode ser rodado localmente (apenas para testes), explicado abaixo.
 
 1. Clone (ou faça um fork e clone): ```git clone https://github.com/victormn/easydonate.git```
-2. Utilize alguma ferramenta para criar um acesso local para suas aplicações. Dica: [https://www.youtube.com/watch?v=ArsbbtkF0ps](Tutorial)
+2. Utilize alguma ferramenta para criar um acesso local para suas aplicações. Dica: [Tutorial](https://www.youtube.com/watch?v=ArsbbtkF0ps)
 3. Copie a pasta deste projeto para sua aplicação local
 4. Cria duas base de dados: db_client e db_notas
 5. Crie a seguinte tabela para db_client: tbl_client; cujos parâmetros são: username (varchar), password (varchar)
@@ -27,7 +27,7 @@ Após essa data, o projeto pode ser rodado localmente (apenas para testes), expl
 
 ## Aplicativo Android
 
-O aplicativo android que interage com essa aplicação web pode ser encontrado no repositório [http://easydonate.sa-east-1.elasticbeanstalk.com/](Aplicativo Android)
+O aplicativo android que interage com essa aplicação web pode ser encontrado no repositório [Aplicativo Android](http://easydonate.sa-east-1.elasticbeanstalk.com/)
 
 
 ## Observação final
