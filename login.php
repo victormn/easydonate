@@ -1,4 +1,4 @@
-<?PHP 
+<?php 
 
     session_start();
     if(isset($_SESSION['admin'])) {
@@ -33,7 +33,7 @@
             if($result->num_rows > 0){   
 
                 $_SESSION['cliente'] = true;
-                header("Location: user/listarNotas.php");
+                header("Location: Templates.php");
                 exit; 
             } 
             else{
@@ -44,15 +44,25 @@
 ?>
 
 <html>
-<head><title>Login|EasyDonate</title></head>
+<head>
+    <title>Login | EasyDonate</title>
+    <style>
+        body {background-color: lightsteelblue;}
+        h1   {color:black; background-image: url(Images/logo_light.png);} 
+       
+    </style>
+</head>
     <body>
-    <center>
-        <h1>Login</h1>
-        <form action="<?PHP $_PHP_SELF ?>" method="post">
-            Username <input type="text" name="txtUsername" value="" /><br/>
-            Password <input type="password" name="txtPassword" value="" /><br/>
-            <input type="submit" name="btnSubmit" value="Login"/>
-        </form>
-    </center>
+        
+        <center>
+        <h1 style="font-family: Tahoma;">Login</h1>
+        <form action="login.php" method="post" enctype="multi-part/form-data">
+            <input placeholder="Username" name="txtUsername" type="text" autofocus>
+            <input placeholder="Password" name="txtPassword" type="password">
+            <input type="submit" name="btnSubmit" value="Login">     
+            
+        </form>        
+        </center>
+    
     </body>
 </html>

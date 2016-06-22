@@ -10,8 +10,6 @@
     <center>
     	<h1>Administrador</h1>
 
-		<a href="celular.php">Celular</a></h1>
-		<?php echo "<br><br>"; ?>
 		<a href="cadastroUser.php">Cadastro de Usuario</a></h1>
 		<?php echo "<br>"; ?>
 		<a href="listarUser.php">Listar Usuarios</a></h1>

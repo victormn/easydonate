@@ -1,7 +1,5 @@
 <?php
 
-	include_once("../system/verificarSessaoCliente.php");
-
 	include_once("conectarNotasBD.php");
 
 	$cnpj = $_POST['txtCNPJ'];
