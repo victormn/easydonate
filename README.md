@@ -12,7 +12,7 @@ Este material apresenta a criação do site.
 
 ## Executando o projeto
 
-O site presente neste projeto está hospedado no endereço [EasyDonate](http://easydonate.sa-east-1.elasticbeanstalk.com/) e estará disponível até a data 10/06/2017.
+O site presente neste projeto está hospedado no endereço [EasyDonate](http://easydonate.sa-east-1.elasticbeanstalk.com/) e estará disponível até a data 29/07/2016.
 
 Após essa data, o projeto pode ser rodado localmente (apenas para testes), explicado abaixo.
 
